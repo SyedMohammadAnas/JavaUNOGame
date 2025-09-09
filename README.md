@@ -1,24 +1,42 @@
-# UNO Game - Complete Implementation Guide
+# UNO Game
 
-## Introduction
+A command-line implementation of the classic UNO card game with AI players and colored terminal interface.
 
-Welcome to our UNO game implementation! This is a fully functional command-line version of the classic UNO card game, complete with AI players and a beautiful colored interface. Today, I'll walk you through how this game works, from the basic rules to the sophisticated programming concepts behind it.
+## Features
 
-## Game Overview
-
-### What is UNO?
-UNO is a fast-paced card game where players race to be the first to get rid of all their cards. The game uses a special deck with colored cards numbered 0-9, plus special action cards that can change the course of the game dramatically.
-
-### Our Implementation Features
 - **4 Players**: 1 human player vs 3 AI opponents
-- **Full UNO Rules**: All standard card types and effects
 - **Colored ASCII Art**: Beautiful card display using terminal colors
 - **Smart AI**: Basic strategy for computer players
 - **Interactive Interface**: Easy-to-use command-line controls
 
-## Game Architecture
+## Quick Start
 
-### Core Classes
+```bash
+python uno_game_copy.py
+```
+
+## How to Play
+
+- **Numbers**: Play the corresponding card
+- **'d'**: Draw a card
+- **Enter**: Continue after AI turns
+- **Ctrl+C**: Quit the game
+
+## Requirements
+
+- Python 3.6+
+- colorama library
+
+```bash
+pip install -r requirements.txt
+```
+
+## Architecture
+
+The game uses three main classes:
+- `Card`: Represents individual UNO cards
+- `Player`: Manages player state and AI logic
+- `UNOGame`: Main game controller and state management
 
 #### 1. Card Class
 The `Card` class represents individual UNO cards with three main properties:
