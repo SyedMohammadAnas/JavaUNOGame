@@ -22,12 +22,11 @@ A complete Java implementation of the classic UNO card game with AI players and 
 # Build the project
 mvn clean package
 
-# Run the game (recommended)
+# Run the game
 java -jar target/uno-game-1.0.0.jar
 
-# Or run directly from class files
-mvn compile
-java -cp target/classes com.unogame.Main
+# Or run directly with Maven
+mvn exec:java -Dexec.mainClass="com.unogame.Main"
 ```
 
 ## How to Play
