@@ -1,7 +1,7 @@
 # UNO Game - Java Implementation
 
 A complete Java implementation of the classic UNO card game with AI players and colored terminal interface. This is a clean, standalone Java project with no Python dependencies.
-
+ 
 ## Features
 
 - **4 Players**: 1 human player vs 3 AI opponents
